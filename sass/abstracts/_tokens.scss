@@ -3,6 +3,7 @@
 @use "sizes" as *;
 
 $active-theme: $light;
+$enable-media-query-dark-mode: true;
 
 // Contextual
 $color-text-default: $color-primary-700;
