@@ -30,6 +30,14 @@
       }
     }
   }
+
+  body[data-theme="😎"] {
+    @each $color, $shade-map in $sleek {
+      @each $shade, $value in $shade-map {
+        --#{$color}-#{$shade}: #{$value};
+      }
+    }
+  }
   
   @each $screen-size, $size-map in $font-sizes {
     @if $screen-size ==small {
